@@ -2,8 +2,10 @@
     "bookendVersion": "v1.0",
     "shareProviders": [
       "facebook",
+      "linkedin",
       "twitter",
       "email"
+
     ],
     "components": [
             
@@ -11,8 +13,8 @@
         "type": "cta-link",
         "links": [
           {
-            "text": "Contacto: ginogentile@live.com",
-            "url": "https://www.ampproject.org/stories/"
+            "text": "Contacto: ginogentile@live.com"
+            
           }
         ]
       }
