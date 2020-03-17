@@ -77,8 +77,8 @@
           </amp-img>
         </amp-story-grid-layer>
         <amp-story-grid-layer template="vertical">
-          <mark><h1>Cronologia del Coronavirus</h1></mark>
-          <p>By Gino Gentile</p>
+          <mark><h1>Información Relevante</h1></mark>
+          <p>COVID-19</p>
         </amp-story-grid-layer>
       </amp-story-page>
 
@@ -105,7 +105,10 @@
       <!-- Page 3 Origen: 2 layers  -->
       <amp-story-page id="page3">
         <amp-story-grid-layer template="fill">
-          <amp-img src="assets/wuhan-market.jpg" 
+          <amp-img 
+          animate-in="fade-in"
+          animate-in-duration="5s"
+          src="assets/wuhan-market.jpg" 
               width="720" height="1280"
               layout="responsive">
           </amp-img>
@@ -120,7 +123,11 @@
       <!-- Page 4: Primer Muerto  -->
       <amp-story-page id="page4" >
         <amp-story-grid-layer template="fill">
-          <amp-img src="assets/primer-muerto.jpg"
+          <amp-img 
+          animate-in="fade-in"
+          animate-in-duration="5s"
+          
+          src="assets/primer-muerto.jpg"
               width="720" height="1280"
               layout="responsive">
           </amp-img>
@@ -151,38 +158,23 @@
         </amp-story-grid-layer>
       </amp-story-page>
 
-      <!-- Page 5 (Collage): 2 layers + animations -->
-      <amp-story-page id="page5">
-        <amp-story-grid-layer template="vertical" class="noedge">
-          <div class="wrapper">
-            <amp-img src="assets/cat.jpg"
-                width="720" height="1280"
-                layout="responsive"
-                animate-in="fade-in"
-                animate-in-delay="0.4s">
-            </amp-img>
-            <amp-img src="assets/dog.jpg"
-                width="720" height="1280"
-                layout="responsive"
-                animate-in="fade-in"
-                animate-in-delay="0.6s">
-            </amp-img>
-            <amp-img src="assets/bird.jpg"
-                width="720" height="1280"
-                layout="responsive"
-                animate-in="fade-in"
-                animate-in-delay=".8s">
-            </amp-img>
-            <amp-img src="assets/rabbit.jpg"
-                width="720" height="1280"
-                layout="responsive"
-                animate-in="fade-in"
-                animate-in-delay="1s">
-            </amp-img>
-          </div>
+      <!-- Page 6 -->
+      <amp-story-page id="page6">
+        <amp-story-grid-layer template="fill">
+          <amp-img 
+          animate-in="pan-left"
+          animate-in-duration="3s"
+          src="assets/usa-trump.jpg"
+              width="720" height="1280"
+              layout="responsive">
+          </amp-img>
         </amp-story-grid-layer>
-        <amp-story-grid-layer template="vertical" class="center-text">
-          <p class="banner-text" animate-in="whoosh-in-right">Pets can lower your stress levels!</p>
+        <amp-story-grid-layer template="vertical">
+          <h1><mark>30 Enero 2020</mark></h1>
+        </amp-story-grid-layer>
+        <amp-story-grid-layer template="vertical" class="bottom">
+          <p><mark>Estados Unidos confirma el primer contagio del coronavirus de Wuhan transmitido de persona a persona.
+            Los casos de coronavirus aumentan a más de 9.600, así como el número de muertes que asciende a 170. Hay más de 100 casos en 20 lugares por fuera de China.</mark></p>
         </amp-story-grid-layer>
       </amp-story-page>
 
