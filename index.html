@@ -22,7 +22,7 @@
       }
       h1 {
         font-weight: bold;
-        font-size: 2.875em;
+        font-size: 2em;
         font-weight: normal;
         line-height: 1.174;
       }
@@ -82,8 +82,8 @@
         </amp-story-grid-layer>
       </amp-story-page>
 
-      <!-- Page 1 Bill Gates -->
-      <amp-story-page auto-advance-after="gates" id="page1" >
+      <!-- Page 2 Bill Gates -->
+      <amp-story-page auto-advance-after="gates" id="page2" >
         <amp-story-grid-layer template="fill">
             <amp-video id="gates" autoplay
             width="720" height="1280" layout="responsive"
@@ -93,7 +93,7 @@
 
           </amp-story-grid-layer>
           <amp-story-grid-layer template="thirds">
-           <h2 grid-area="upper-third"> <mark>En 2015 Bill Gates habló sobre la próxima epidemia.</mark></h2>
+           <h1 grid-area="upper-third"> <mark>En 2015 Bill Gates habló sobre la próxima epidemia.</mark></h1>
             <p grid-area="lower-third">"Si algo ha de matar a más de 10 millones de personas en las próximas décadas, probablemente será un virus muy infeccioso más que una guerra"</p>
         </amp-story-grid-layer>
           <amp-story-page-attachment layout="nodisplay" data-cta-text="Ver video">
@@ -102,8 +102,8 @@
            </amp-story-page-attachment>
       </amp-story-page>
 
-      <!-- Page 2 Origen: 2 layers (fill + thirds) -->
-      <amp-story-page id="page2">
+      <!-- Page 3 Origen: 2 layers  -->
+      <amp-story-page id="page3">
         <amp-story-grid-layer template="fill">
           <amp-img src="assets/wuhan-market.jpg" 
               width="720" height="1280"
@@ -111,43 +111,43 @@
           </amp-img>
         </amp-story-grid-layer>
           <amp-story-grid-layer template="thirds">
-            <h2 grid-area="upper-third"><mark>7 Enero 2020 </mark></h2>
+            <h1 grid-area="upper-third"><mark>7 Enero 2020 </mark></h1>
             
            <p grid-area="lower-third"> <mark>Autoridades chinas confirman nuevo Coronavirus. Cierran el mercado mayorista de mariscos de Huanan, después de que se descubriera que los animales salvajes vendidos allí pueden ser la fuente del virus.</mark></p>
         </amp-story-grid-layer>
       </amp-story-page>
 
-      <!-- Page 3 (Bird): 3 layers (fill + vertical + vertical) + Audio-->
-      <amp-story-page id="page3" background-audio="assets/bird-singing.mp3">
+      <!-- Page 4: Primer Muerto  -->
+      <amp-story-page id="page4" >
         <amp-story-grid-layer template="fill">
-          <amp-img src="assets/bird.jpg"
+          <amp-img src="assets/primer-muerto.jpg"
               width="720" height="1280"
               layout="responsive">
           </amp-img>
         </amp-story-grid-layer>
         <amp-story-grid-layer template="vertical">
-          <h1>Birds</h1>
+          <h1><mark>11 Enero 2020</mark></h1>
         </amp-story-grid-layer>
         <amp-story-grid-layer template="vertical" class="bottom">
-          <q>A bird is three things: Feathers, flight and song, And feathers are the least of these. -Marjorie Allen Seiffert</q>
+          <q>La Comisión de Salud Municipal de Wuhan anuncia la primera muerte provocada por el coronavirus. Un hombre de 61 años.</q>
         </amp-story-grid-layer>
       </amp-story-page>
 
-      <!-- Page 4 (Rabbit): 3 layers (fill (video) + vertical + vertical) -->
-      <amp-story-page id="page4">
+      <!-- Page 5 - Primeros Mil -->
+      <amp-story-page id="page5">
         <amp-story-grid-layer template="fill">
           <amp-video autoplay loop
                 width="720" height="1280"
                 poster="assets/rabbit.jpg"
                 layout="responsive">
-              <source src="assets/rabbit.mp4" type="video/mp4">
+              <source src="assets/heat-camera.mp4" type="video/mp4">
           </amp-video>
         </amp-story-grid-layer>
         <amp-story-grid-layer template="vertical">
-          <h1>Rabbits</h1>
+          <h1><mark>25 Enero 2020</mark></h1>
         </amp-story-grid-layer>
         <amp-story-grid-layer template="vertical" class="bottom">
-          <p>Rabbits can learn to follow simple voice commands and come when called by name, and are curious and playful.</p>
+          <p>El número de casos en el mundo supera los 1.000. Se registran en total 1.287 casos.</p>
         </amp-story-grid-layer>
       </amp-story-page>
 
