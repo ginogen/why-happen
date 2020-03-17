@@ -2,7 +2,7 @@
 <html ⚡>
   <head>
     <meta charset="utf-8">
-    <title>Cronologia del Coronavirus</title>
+    <title>Charlas TED, TEDx y otras para la cuarentena.</title>
     <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
     <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
     <script async src="https://cdn.ampproject.org/v0.js"></script>
@@ -12,6 +12,19 @@
         src="https://cdn.ampproject.org/v0/amp-story-1.0.js"></script>
     <script async custom-element="amp-story" src="https://cdn.ampproject.org/v0/amp-story-1.0.js"></script>    
     <link href="https://fonts.googleapis.com/css?family=Oswald:200,300,400" rel="stylesheet">
+    <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
+    <amp-analytics type="gtag" data-credentials="include">
+    <script type="application/json">
+    {
+      "vars" : {
+        "gtag_id": "UA-110811779-2",
+        "config" : {
+          "UA-110811779-2": { "groups": "default" }
+        }
+      }
+    }
+    </script>
+    </amp-analytics>
     <style amp-custom>
       amp-story {
         font-family: 'Oswald',sans-serif;
@@ -22,10 +35,11 @@
       }
       h1 {
         font-weight: bold;
-        font-size: 2em;
+        font-size: 1.4em;
         font-weight: normal;
-        line-height: 1.174;
+        line-height: 1.184;
       }
+      
       p {
         font-weight: normal;
         font-size: 1.2em;
@@ -61,24 +75,25 @@
   <body>
     <!-- Cover page -->
     <amp-story standalone
-        title="Cronologia del Coronavirus"
-        publisher="AMP tutorials"
+        title="Charlas TED, TEDx y otras"
+        publisher="Gino Gentile"
         publisher-logo-src="assets/AMP-Brand-White-Icon.svg"
-        poster-portrait-src="assets/covid.jpg">
+        poster-portrait-src="assets/cover.jpg">
       <amp-story-page id="cover">
         <amp-story-grid-layer template="fill">
           <amp-img 
           animate-in="pan-right"
-          animate-in-duration="3s"
+          animate-in-duration="5s"
       
-              src="assets/covid.jpg"
+              src="assets/cover.jpg"
               width="720" height="1280"
               layout="responsive">
           </amp-img>
         </amp-story-grid-layer>
         <amp-story-grid-layer template="vertical">
-          <mark><h1>Información Relevante</h1></mark>
-          <p>COVID-19</p>
+          <mark><h1>Charlas TED, TEDx y otras</h1></mark>
+          <p><mark>En tiempos de cuarentena y aislamiento social, el aburrimiento se hace presente, codo a codo y entre todos podemos superar este momento.</mark></p>
+          
         </amp-story-grid-layer>
       </amp-story-page>
 
@@ -93,89 +108,92 @@
 
           </amp-story-grid-layer>
           <amp-story-grid-layer template="thirds">
-           <h1 grid-area="upper-third"> <mark>En 2015 Bill Gates habló sobre la próxima epidemia.</mark></h1>
-            <p grid-area="lower-third">"Si algo ha de matar a más de 10 millones de personas en las próximas décadas, probablemente será un virus muy infeccioso más que una guerra"</p>
+           <h2 grid-area="upper-third"> <mark>En 2015 Bill Gates habló sobre la próxima epidemia.</mark></h2>
+            <p grid-area="lower-third"><mark>"Si algo ha de matar a más de 10 millones de personas en las próximas décadas, probablemente será un virus muy infeccioso más que una guerra"</mark></p>
         </amp-story-grid-layer>
           <amp-story-page-attachment layout="nodisplay" data-cta-text="Ver video">
-            <h1>Bill Gates TEDx Talks - 2015</h1>
+            <h2>Bill Gates TEDx Talks - 2015</h2>
             <div style="max-width:854px"><div style="position:relative;height:0;padding-bottom:56.25%"><iframe src="https://embed.ted.com/talks/lang/es/bill_gates_the_next_outbreak_we_re_not_ready" width="854" height="480" style="position:absolute;left:0;top:0;width:100%;height:100%" frameborder="0" scrolling="no" allowfullscreen></iframe></div></div>
            </amp-story-page-attachment>
       </amp-story-page>
 
-      <!-- Page 3 Origen: 2 layers  -->
+      <!-- Page 3 Control Coronavirus TED  -->
       <amp-story-page id="page3">
         <amp-story-grid-layer template="fill">
-          <amp-img 
-          animate-in="fade-in"
-          animate-in-duration="5s"
-          src="assets/wuhan-market.jpg" 
-              width="720" height="1280"
-              layout="responsive">
-          </amp-img>
-        </amp-story-grid-layer>
-          <amp-story-grid-layer template="thirds">
-            <h1 grid-area="upper-third"><mark>7 Enero 2020 </mark></h1>
-            
-           <p grid-area="lower-third"> <mark>Autoridades chinas confirman nuevo Coronavirus. Cierran el mercado mayorista de mariscos de Huanan, después de que se descubriera que los animales salvajes vendidos allí pueden ser la fuente del virus.</mark></p>
-        </amp-story-grid-layer>
-      </amp-story-page>
+          <amp-video id="coronavirus" autoplay
+          width="720" height="1280" layout="responsive"
+          >
+          <source src="assets/how-control.mp4" type="video/mp4">
+           </amp-video>   
 
-      <!-- Page 4: Primer Muerto  -->
-      <amp-story-page id="page4" >
-        <amp-story-grid-layer template="fill">
-          <amp-img 
-          animate-in="fade-in"
-          animate-in-duration="5s"
+        </amp-story-grid-layer>
+        <amp-story-grid-layer template="thirds">
+         <h2 grid-area="upper-third"><mark>¿Cómo controlar la pandemia del Coronavirus?</mark></h2>
           
-          src="assets/primer-muerto.jpg"
-              width="720" height="1280"
-              layout="responsive">
-          </amp-img>
-        </amp-story-grid-layer>
-        <amp-story-grid-layer template="vertical">
-          <h1><mark>11 Enero 2020</mark></h1>
-        </amp-story-grid-layer>
-        <amp-story-grid-layer template="vertical" class="bottom">
-          <q>La Comisión de Salud Municipal de Wuhan anuncia la primera muerte provocada por el coronavirus. Un hombre de 61 años.</q>
-        </amp-story-grid-layer>
+      </amp-story-grid-layer>
+        <amp-story-page-attachment layout="nodisplay" data-cta-text="Ver video">
+          <div style="max-width:854px"><div style="position:relative;height:0;padding-bottom:56.25%"><iframe width="560" height="315" src="https://www.youtube.com/embed/slzuVj5YEms?start=15" frameborder="0" style="position:absolute;left:0;top:0;width:100%;height:100%" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div> </div> 
+    </amp-youtube>
+         </amp-story-page-attachment>
       </amp-story-page>
 
-      <!-- Page 5 - Primeros Mil -->
+      <!-- Page Focus Brain TED  -->
+      <amp-story-page id="page4" >
+        <amp-video id="gates" autoplay
+            width="720" height="1280" layout="responsive"
+            >
+            <source src="assets/brain.mp4" type="video/mp4">
+             </amp-video>   
+
+          </amp-story-grid-layer>
+          <amp-story-grid-layer template="thirds">
+           <h2 grid-area="upper-third"><mark> ¿Cómo mantener tu cerebro enfocado?</mark></h2>
+            <p grid-area="lower-third">"Hace algunos años, empecé a darme cuenta de algo en mi propia conducta que me incomodaba un poco.Mi vida era una sucesión de pantallas."</p>
+        </amp-story-grid-layer>
+          <amp-story-page-attachment layout="nodisplay" data-cta-text="Ver video">
+            
+            <div style="max-width:854px"><div style="position:relative;height:0;padding-bottom:56.25%"><iframe src="https://www.youtube.com/embed/Hu4Yvq-g7_Y" width="854" height="480" style="position:absolute;left:0;top:0;width:100%;height:100%" frameborder="0" scrolling="no" allowfullscreen></iframe></div></div>
+           </amp-story-page-attachment>
+      </amp-story-page>
+
+      <!-- Page 5 - Astronautas -->
       <amp-story-page id="page5">
         <amp-story-grid-layer template="fill">
-          <amp-video autoplay loop
-                width="720" height="1280"
-                poster="assets/rabbit.jpg"
-                layout="responsive">
-              <source src="assets/heat-camera.mp4" type="video/mp4">
-          </amp-video>
+          <amp-video id="bilinkis" autoplay
+          width="720" height="1280" layout="responsive"
+          >
+          <source src="assets/bilinkis.mp4" type="video/mp4">
+           </amp-video>   
+
         </amp-story-grid-layer>
-        <amp-story-grid-layer template="vertical">
-          <h1><mark>25 Enero 2020</mark></h1>
-        </amp-story-grid-layer>
-        <amp-story-grid-layer template="vertical" class="bottom">
-          <p>El número de casos en el mundo supera los 1.000. Se registran en total 1.287 casos.</p>
-        </amp-story-grid-layer>
+        <amp-story-grid-layer template="thirds">
+         <h2 grid-area="upper-third"><mark> ¿Cómo nos manipulan en las redes sociales?</mark></h2>
+          <p grid-area="lower-third">"¿Ustedes saben qué están haciendo sus teléfonos en este momento? Están acumulando datos sobre nuestras vidas, nuestras preferencias, nuestras rutas."</p>
+      </amp-story-grid-layer>
+        <amp-story-page-attachment layout="nodisplay" data-cta-text="Ver video">
+          
+          <div style="max-width:854px"><div style="position:relative;height:0;padding-bottom:56.25%"><iframe src="https://www.youtube.com/embed/8nKCA9h-7BA" width="854" height="480" style="position:absolute;left:0;top:0;width:100%;height:100%" frameborder="0" scrolling="no" allowfullscreen></iframe></div></div>
+         </amp-story-page-attachment>
       </amp-story-page>
 
       <!-- Page 6 -->
       <amp-story-page id="page6">
         <amp-story-grid-layer template="fill">
-          <amp-img 
-          animate-in="pan-left"
-          animate-in-duration="3s"
-          src="assets/usa-trump.jpg"
-              width="720" height="1280"
-              layout="responsive">
-          </amp-img>
+          <amp-video id="piccioli" autoplay
+          width="720" height="1280" layout="responsive"
+          >
+          <source src="assets/piccioli.mp4" type="video/mp4">
+           </amp-video>   
+
         </amp-story-grid-layer>
-        <amp-story-grid-layer template="vertical">
-          <h1><mark>30 Enero 2020</mark></h1>
-        </amp-story-grid-layer>
-        <amp-story-grid-layer template="vertical" class="bottom">
-          <p><mark>Estados Unidos confirma el primer contagio del coronavirus de Wuhan transmitido de persona a persona.
-            Los casos de coronavirus aumentan a más de 9.600, así como el número de muertes que asciende a 170. Hay más de 100 casos en 20 lugares por fuera de China.</mark></p>
-        </amp-story-grid-layer>
+        <amp-story-grid-layer template="thirds">
+         <h2 grid-area="upper-third"><mark> Interés compuesto para los amigos y el aprendizaje</mark></h2>
+          <p grid-area="lower-third">"Aún los más grandes emprendedores están aprendiendo todo el tiempo."</p>
+      </amp-story-grid-layer>
+        <amp-story-page-attachment layout="nodisplay" data-cta-text="Ver video">
+          
+          <div style="max-width:854px"><div style="position:relative;height:0;padding-bottom:56.25%"><iframe src="https://www.youtube.com/embed/4YDMWa6b_Lo" width="854" height="480" style="position:absolute;left:0;top:0;width:100%;height:100%" frameborder="0" scrolling="no" allowfullscreen></iframe></div></div>
+         </amp-story-page-attachment>
       </amp-story-page>
 
       <!-- Bookend -->
